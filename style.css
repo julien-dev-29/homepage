@@ -1,6 +1,7 @@
 :root {
   --bg-body: #111111;
   --color-body: #eeeeee;
+  --bg-primary: #0090ff;
 }
 
 body {
@@ -11,6 +12,8 @@ body {
 }
 header {
   position: relative;
+  background-color: var(--bg-primary);
+  padding: 0 32px 32px 32px;
 }
 
 header img {
@@ -20,7 +23,33 @@ header img {
 header h1 {
   position: absolute;
   content: "";
-  bottom: 10px;
-  left: 10px;
+  bottom: 16px;
+  left: 52px;
   font-size: 3.4rem;
+}
+
+footer {
+  background-color: var(--bg-primary);
+}
+
+main {
+  padding: 24px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card {
+  border-radius: 3px;
+  border: 1px solid var(--bg-primary);
+}
+
+.card-body {
+  padding: 24px;
 }
