@@ -1,0 +1,26 @@
+:root {
+  --bg-body: #111111;
+  --color-body: #eeeeee;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-body);
+  color: var(--color-body);
+  font-family: sans-serif;
+}
+header {
+  position: relative;
+}
+
+header img {
+  width: 100%;
+}
+
+header h1 {
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  left: 10px;
+  font-size: 3.4rem;
+}
