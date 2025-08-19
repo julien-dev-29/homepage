@@ -16,7 +16,8 @@ header {
   padding: 0 32px 32px 32px;
 }
 
-header img {
+header img,
+footer img {
   width: 100%;
 }
 
@@ -30,6 +31,7 @@ header h1 {
 
 footer {
   background-color: var(--bg-primary);
+  padding: 24px;
 }
 
 main {
@@ -46,10 +48,24 @@ h2 {
 }
 
 .card {
+  margin-bottom: 64px;
   border-radius: 3px;
   border: 1px solid var(--bg-primary);
+  box-shadow: 2px 2px 15px 5px rgb(0, 144, 255, 0.2);
 }
 
 .card-body {
   padding: 24px;
+}
+
+.socials {
+  margin-top: 24px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+#my-work {
+  margin-top: 96px;
 }
