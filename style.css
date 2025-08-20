@@ -1,24 +1,32 @@
 :root {
-  --bg-body: #111111;
-  --color-body: #eeeeee;
-  --bg-primary: #0090ff;
+  --bg-1: #111111;
+  --bg-2: #191919;
+  --border-1: #3a3a3a;
+  --text-1: #eeeeee;
+  --text-2: #b4b4b4;
+  --solid-1: #6e6e6e;
+  --solid-2: #7b7b7b;
+  --primary-1: #12a594;
+  --primary-2: #7d66d9;
+  --primary-3: #ff801f;
 }
 
 body {
   margin: 0;
-  background-color: var(--bg-body);
-  color: var(--color-body);
+  background-color: var(--bg-1);
+  color: var(--text-1);
   font-family: sans-serif;
 }
 header {
+  z-index: -5;
   position: relative;
-  background-color: var(--bg-primary);
+  background-color: var(--solid-1);
   padding: 0 32px 32px 32px;
 }
 
-header img,
-footer img {
+header img {
   width: 100%;
+  box-shadow: 5px 5px 15px 10px rgb(0, 0, 0, 0.3);
 }
 
 header h1 {
@@ -29,8 +37,48 @@ header h1 {
   font-size: 3.4rem;
 }
 
+.triangle-1 {
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-3);
+  clip-path: polygon(0 100%, 100% 80%, 100% 100%);
+}
+
+.triangle-2 {
+  z-index: -2;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-1);
+  clip-path: polygon(0 100%, 100% 50%, 100% 100%);
+}
+
+.triangle-3 {
+  z-index: -3;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-2);
+  clip-path: polygon(0 100%, 100% 20%, 100% 100%);
+}
+
 footer {
-  background-color: var(--bg-primary);
+  background-color: var(--solid-1);
+}
+
+footer img {
+  width: 100%;
+}
+
+.contact {
   padding: 24px;
 }
 
@@ -47,15 +95,33 @@ h2 {
   object-fit: cover;
 }
 
+.card a {
+  color: inherit;
+}
+
 .card {
   margin-bottom: 64px;
   border-radius: 3px;
-  border: 1px solid var(--bg-primary);
-  box-shadow: 2px 2px 15px 5px rgb(0, 144, 255, 0.2);
+  border: 1px solid var(--border-1);
+  background-color: var(--bg-2);
 }
 
 .card-body {
   padding: 24px;
+}
+
+.card-title {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.card-title a {
+  margin-left: 16px;
+}
+
+.card p {
+  color: var(--text-2);
 }
 
 .socials {
@@ -68,4 +134,8 @@ h2 {
 
 #my-work {
   margin-top: 96px;
+}
+
+#about-me p {
+  color: var(--text-2);
 }
