@@ -89,6 +89,7 @@ header img {
   border-radius: 5px;
   overflow: hidden;
   border: 1px solid var(--border-1);
+  margin-bottom: 48px;
 }
 
 .project-card-body {
@@ -101,8 +102,28 @@ header img {
   object-fit: cover;
 }
 
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a {
+  margin-left: 16px;
+  color: inherit;
+  height: 32px;
+  width: 32px;
+}
+
 footer {
   background-color: var(--solid-purple);
+  color: white;
 }
 
 footer .contact {
