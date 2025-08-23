@@ -116,26 +116,6 @@ body {
   background: linear-gradient(160deg, var(--solid-purple) 50%, var(--bg-1) 50%);
 }
 
-#hero figure {
-  position: relative;
-}
-
-#hero figcaption {
-  position: absolute;
-  color: var(--title);
-  bottom: 16px;
-  left: 16px;
-  width: 100%;
-  font-size: 2.5rem;
-  line-height: 1.1;
-}
-
-#hero img {
-  width: 100%;
-  object-fit: cover;
-  object-position: 50% 50%;
-}
-
 #hero h2 {
   margin-top: 32px;
   font-size: 2rem;
@@ -145,6 +125,23 @@ body {
 #hero p {
   margin-top: 24px;
   color: var(--text-2);
+}
+
+#hero img {
+  width: 100%;
+}
+
+#hero figure {
+  position: relative;
+}
+
+#hero figcaption {
+  position: absolute;
+  font-size: 2rem;
+  color: var(--title);
+  line-height: 1.1;
+  bottom: 16px;
+  left: 16px;
 }
 
 #projects {
@@ -247,35 +244,4 @@ footer .socials a {
 
 footer > div > p:nth-child(2) {
   font-size: 1.2rem;
-}
-
-@media screen and (min-width: 600px) {
-  #hero {
-    padding: 96px 32px 0 32px;
-  }
-  .hero-container {
-    padding: 32px;
-    background-color: var(--bg-2);
-    box-shadow: var(--shadow-light);
-  }
-
-  .hero-container img {
-    float: left;
-    margin-right: 16px;
-    margin-bottom: 8px;
-    margin-top: -64px;
-    box-shadow: var(--shadow-light);
-  }
-
-  #hero img {
-    width: 50%;
-  }
-
-  #hero figcaption {
-    position: absolute;
-    color: var(--title);
-    width: 100%;
-    font-size: 2.5rem;
-    line-height: 1.1;
-  }
 }
