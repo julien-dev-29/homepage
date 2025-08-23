@@ -138,6 +138,7 @@ body {
 
 #hero h2 {
   margin-top: 32px;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -152,6 +153,7 @@ body {
 
 #projects h2 {
   text-align: center;
+  font-size: 2rem;
   margin-bottom: 16px;
 }
 
@@ -194,16 +196,32 @@ footer {
   color: white;
 }
 
+footer img {
+  display: block;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
 footer .contact {
   padding: 24px;
 }
 
-footer p {
+footer > div > p:nth-child(1) {
   margin-top: 8px;
+}
+
+footer > div > p:nth-child(3) {
+  margin-top: 16px;
+}
+
+footer > div .phone {
+  margin-top: 16px;
 }
 
 footer h2 {
   text-align: center;
+  font-size: 2rem;
   margin-bottom: 16px;
 }
 
@@ -225,4 +243,8 @@ footer .socials {
 footer .socials a {
   height: 32px;
   width: 32px;
+}
+
+footer > div > p:nth-child(2) {
+  font-size: 1.2rem;
 }
