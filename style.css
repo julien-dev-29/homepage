@@ -160,6 +160,7 @@ body {
   margin: auto;
   max-width: 1400px;
   padding: 16px;
+  background-color: var(--bg-1);
 }
 
 #projects h2 {
@@ -172,7 +173,7 @@ body {
   overflow: hidden;
   border-radius: 5px;
   border: 1px solid var(--border-1);
-  background-color: var(--bg-1);
+  background-color: var(--bg-2);
   margin-bottom: 48px;
   box-shadow: var(--shadow-light);
 }
@@ -292,6 +293,7 @@ footer > div > p:nth-child(2) {
   }
 
   footer h2 {
+    text-align: left;
     margin-top: 78px;
   }
 }
@@ -307,9 +309,14 @@ footer > div > p:nth-child(2) {
   }
 
   footer figure {
+    margin: 45px;
     display: block;
     object-fit: cover;
-    width: 100%;
+    width: 33%;
     height: auto;
+  }
+
+  footer {
+    justify-content: space-between;
   }
 }
